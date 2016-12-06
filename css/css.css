@@ -1,0 +1,9 @@
+*{padding:0;margin:0;}
+.image{text-align: center;margin-top: }
+.f-1{position: absolute;left: 50%;top:95px;margin-left:-54px;}
+.f-2{position: absolute;left: 50%;top:1005px;margin-left:-56px;}
+.f-3 img{margin:0 auto;margin-top:5px;opacity:100 !important;z-index: 2;}
+.f-3{position: fixed;text-align:center;left: 50%;bottom:0;margin-left:-160px;height: 40px;background: #320A0B;opacity: 1;line-height:40px;width: 320px;vertical-align: center;}
+.con{position: relative;height: 1130px;overflow: hidden;}
+.f-3 a{display: block;}
+.bottom{position: absolute;}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>关注公众号获取红包秘籍</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+	<meta charset="utf-8">
+</head>
+<body>
+<div class="con">
+    <div class="image">
+        <img src="image/image.jpg" width="320">
+        <a name="f-4" class="bottom"></a>
+    </div>
+    <div class="f-1">
+        <img src="image/erweima.jpg "width="115" >
+    </div>
+    <div class="f-2" >
+        <img src="image/erweima.jpg "width="115" >
+    </div>
+    <div class="f-3 bottombox" id="bb">
+        <a href="#f-4"><img src="image/2.jpg "width="100" ></a>
+    </div>
+    </div>
+    <script>
+function fixDown(boxId){
+    var box = document.getElementById(boxId);
+    var cn = box.className;
+    var bh=box.offsetTop;
+    var wh=document.documentElement.clientHeight;//这里为了兼容IE，所以不能用window.innerHeight;
+    if(bh >= wh){
+    box.className = cn + " fixed-bottom";
+    }else{
+        box.className = cn;
+        }
+    }
+    window.onload=function(){fixDown("bb");}
+    window.onresize=function(){fixDown("bb");
+}
+
+window.onscroll=function(){
+    var scrollTop = document.documentElement.scrollTop||document.body.scrollTop;
+    if(scrollTop>=document.body.offsetHeight-document.documentElement.clientHeight)
+    {
+        document.getElementById("bb").style.display="none";  
+    }else{
+        document.getElementById("bb").style.display="block";  
+    }
+}
+</script>
+</body>
+</html>
